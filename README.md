@@ -16,7 +16,7 @@ It supports topic & difficulty filtering and provides fallback responses if an a
 🔹 Simple to use with FastAPI.
 
 ## Project Structure
-bangla-chatbot/
+bangla-chatbot/  
 │  
 ├─ main.py              # FastAPI server  
 ├─ vector_store.py      # FAISS search & embedding  
