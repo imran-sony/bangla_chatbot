@@ -25,10 +25,19 @@ def chat(request: ChatRequest):
         request.difficulty
     )
 
+    # If no FAQ found, return fallback
     if not retrieved:
         return {"answer": "দুঃখিত, এই প্রশ্নের উত্তর পাওয়া যায়নি।"}
 
-    context = "\n".join([doc["answer"] for doc in retrieved])
-    answer = generate_answer(context, request.question)
+    # Join answers, skip empty ones
+    context = "\n".join([doc.get("answer", "") for doc in retrieved if doc.get("answer")])
+    
+    if not context:
+        return {"answer": "দুঃখিত, এই প্রশ্নের উত্তর পাওয়া যায়নি।"}
 
-    return {"answer": answer}
+    try:
+        answer = generate_answer(context, request.question)
+        return {"answer": answer}
+    except Exception as e:
+        # Fallback in case of LLM error
+        return {"answer": f"Internal error: {str(e)}"}
