@@ -17,7 +17,7 @@ It supports topic & difficulty filtering and provides fallback responses if an a
 
 ## Project Structure
 bangla-chatbot/
-│
+│  
 ├─ main.py              # FastAPI server  
 ├─ vector_store.py      # FAISS search & embedding  
 ├─ groq_llm.py          # Groq LLM integration  
