@@ -35,13 +35,13 @@ git clone https://github.com/imran-sony/bangla_chatbot.git
 cd bangla_chatbot
 
 
-## Create a virtual environment:
+## Create a virtual environment
 
 python -m venv venv
 venv\Scripts\activate     # Windows
 
 
-## Install dependencies:
+## Install dependencies
 
 pip install fastapi uvicorn faiss-cpu sentence-transformers groq python-dotenv
 
