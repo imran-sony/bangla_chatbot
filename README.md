@@ -29,10 +29,10 @@ bangla-chatbot/
 ## Installation
 
 Clone the repository:
-
+```bash
 git clone https://github.com/imran-sony/bangla_chatbot.git  
 cd bangla_chatbot
-
+```
 
 ## Create a virtual environment
 
