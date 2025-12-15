@@ -31,7 +31,7 @@ bangla-chatbot/
 
 Clone the repository:
 
-git clone https://github.com/imran-sony/bangla_chatbot.git
+git clone https://github.com/imran-sony/bangla_chatbot.git  
 cd bangla_chatbot
 
 
