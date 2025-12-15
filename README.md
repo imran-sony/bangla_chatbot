@@ -22,7 +22,7 @@ bangla-chatbot/
 ├─ groq_llm.py          # Groq LLM integration  
 ├─ faq_data.py          # Sample FAQ dataset  
 ├─ .env                 # Groq API key  
-├─ requirements.txt     # Optional: dependencies  
+├─ requirements.txt     # Dependencies  
 └─ README.md  
 
 
